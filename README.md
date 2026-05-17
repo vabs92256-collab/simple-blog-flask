@@ -40,7 +40,25 @@ A modular, secure, and feature-rich Blog Management System built with Python and
 
 Follow these steps to set up the environment and run the application locally.
 
-### 1. Clone the Repository
-```bash
-git clone <your-repository-link>
-cd flask_app_datagrid
+step 1 
+# For mac
+python3 -m venv venv
+source venv/bin/activate
+
+# For Windows:
+python -m venv venv
+venv\Scripts\activate
+
+step 2 
+pip install -r requirements.txt
+
+step 3 
+Run the setup script to create the database schema and a default administrator account
+
+python3 setup_db.py
+
+Email: admin@problog.com
+Password: Admin123!
+
+step 4 
+python3 run.py
